@@ -2,18 +2,22 @@
 {% load bootstrap5 %}
 
 {% block title %}
-    {{ category|title }}
+    {{ category_code }}
 {% endblock %}
-
 {% block menu %}
 
 {% endblock %}
-
 {% block content %}
     {% for category in categories %}
         {% if category.0 == category_code %}
             <h2 style="margin-top: 1.5rem">{{ category.1 }}</h2>
-            {% include 'partial/product_list.html' with products=products %}
+            <div class="row row-cols-1 row-cols-md-5 g-4">
+                {% for product in products %}
+
+                    {% include 'partial/product_list.html' with products=products %}
+
+                {% endfor %}
+            </div>
         {% endif %}
     {% endfor %}
 {% endblock %}

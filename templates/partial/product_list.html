@@ -1,26 +1,22 @@
-<div class="row row-cols-1 row-cols-md-5 g-4">
-    {% for product in products %}
-        <div class="col">
-            <div class="card">
-                <a onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';"
-                   href="{% url 'product_detail' product.pk %}"
-                   style="color: inherit; text-decoration: none;">
-                    {% if product.image %}
-                        <img class="img-thumbnail" src="{{ product.image }}"
-                             style="height: 15rem; object-fit:contain">
-                    {% else %}
-                        <img class="img-thumbnail"
-                             src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
-                             style="height: 15rem; object-fit:contain">
-                    {% endif %}
-                    <div class="card-body">
-                        <h6 class="card-title">{{ product.name }}</h6>
-                        <div class="card-footer">
-                            <p class="text-center" style="margin: 0; ">${{ product.price }}</p>
-                        </div>
-                    </div>
-                </a>
+<div class="col">
+    <div class="card">
+        <a onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';"
+           href="{% url 'product_detail' product.pk %}"
+           style="color: inherit; text-decoration: none;">
+            {% if product.image %}
+                <img class="img-thumbnail" src="{{ product.image }}"
+                     style="height: 15rem; object-fit:contain">
+            {% else %}
+                <img class="img-thumbnail"
+                     src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+                     style="height: 15rem; object-fit:contain">
+            {% endif %}
+            <div class="card-body">
+                <h6 class="card-title">{{ product.name }}</h6>
+                <div class="card-footer">
+                    <p class="text-center" style="margin: 0; ">${{ product.price }}</p>
+                </div>
             </div>
-        </div>
-    {% endfor %}
+        </a>
+    </div>
 </div>
