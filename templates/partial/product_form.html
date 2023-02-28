@@ -1,0 +1,11 @@
+{% load bootstrap5 %}
+{% csrf_token %}
+{% bootstrap_form form %}
+<div class="form_row">
+    {% buttons %}
+        <button type="submit" class="btn btn-primary">
+            {{ button_text }}
+        </button>
+    {% endbuttons %}
+</div>
+

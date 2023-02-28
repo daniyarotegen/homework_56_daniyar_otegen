@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% bootstrap_messages %}
+{% block title %}
+    View Product
+{% endblock %}
+{% block menu %}
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="{% url 'product_update' product.pk %}"
+           style="color: black">Edit</a>
+    </li>
+    <li>
+        <a class="nav-link active" aria-current="page" href="{% url 'product_delete' product.pk %}"
+           style="color: black">Delete</a>
+    </li>
+    </ul>
+{% endblock %}
+<div class="container">
+    {% block content %}
+        <h2 style="margin-top: 1.5rem">{{ product.name }}</h2>
+        <div class="card">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    {% if product.image %}
+                        <img src="{{ product.image }}" class="card-img">
+                    {% else %}
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+                             class="card-img">
+                    {% endif %}
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text"><b>Description:</b> {{ product.description }}</p>
+                        <h6 class="card-title"><b>Category:</b> {{ product.get_category_display }}</h6>
+                        <h6 class="card-title"><b>Price:</b> ${{ product.price }}</h6>
+                        <h6 class="card-title"><b>Quantity:</b> {{ product.quantity }}</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    {% endblock %}
+</div>

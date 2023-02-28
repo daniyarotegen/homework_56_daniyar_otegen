@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load bootstrap5 %}
+{% block title %}
+    Create Task
+{% endblock %}
+{% block content %}
+    <h2 style="margin-top: 1rem">Add Product</h2>
+    <div class="form">
+        <form action="{% url 'product_add' %}" method="post">
+            {% include 'partial/product_form.html' with button_text='Add' %}
+        </form>
+    </div>
+{% endblock %}
+
+

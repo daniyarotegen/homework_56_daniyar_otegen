@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load bootstrap5 %}
+
+{% block title %}
+    {{ category|title }}
+{% endblock %}
+
+{% block menu %}
+
+{% endblock %}
+
+{% block content %}
+    {% for category in categories %}
+        {% if category.0 == category_code %}
+            <h2 style="margin-top: 1.5rem">{{ category.1 }}</h2>
+            {% include 'partial/product_list.html' with products=products %}
+        {% endif %}
+    {% endfor %}
+{% endblock %}

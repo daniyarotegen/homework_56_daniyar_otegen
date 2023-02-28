@@ -1,0 +1,675 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2023-02-27T13:27:04.495Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "asdas",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2023-02-27T13:27:08.167Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "qwe",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2023-02-27T13:27:10.897Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "werwer",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add product",
+    "content_type": 7,
+    "codename": "add_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change product",
+    "content_type": 7,
+    "codename": "change_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete product",
+    "content_type": 7,
+    "codename": "delete_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view product",
+    "content_type": 7,
+    "codename": "view_product"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$pbP7ThAdYlwsTZ3xFEpsnH$lt7EuQZ4QYIYZte3CNwgAe7AU/Z3idTdQkYgIgQELv4=",
+    "last_login": "2023-02-27T11:23:49.731Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-02-27T11:23:44.551Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "market",
+    "model": "product"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "zn3nus8kublf4ftz3hgwrvpg4cn417e3",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pBC6TC4dO8ZCDOAVA0kpV0Z765NutDtf-_9l_BhW4vfelr8HMVZKHH63SjwI9UdxHuotya51XWZSe6KPGiX1xbT83K4fwcl9PKtOWk9QkaHgJiHMKGjERM4TSkYwxmMQsoUObOOykSYwLqBMgJbsCTeH-btOCw:1pWbbh:YwBh7Z34Udn4rsK3budfNXk6sqv_Q8ySODX_1EJ7Utw",
+    "expire_date": "2023-03-13T11:23:49.733Z"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 4,
+  "fields": {
+    "name": "GIGABYTE GeForce RTX 3060 GAMING OC LHR 12GB",
+    "description": "NVIDIA® GeForce RTX™ 3060 (LHR), Overclocked\r\n12 GB GDDR6 (192bit), Connection via PCIe 4.0\r\nActive Cooling (Dual-Slot), RGB beleuchtet\r\n2x HDMI, 2x DisplayPort\r\nPower Supply: 1x 8pin, 550 W PSU recommended\r\nCard length approx. 282 mm",
+    "image": "https://img.computerunivers.net/images/250x250/908343590BB30CEB854B4260987BBDBF.jpg",
+    "category": "GPU",
+    "quantity": 20,
+    "price": "350.00"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 5,
+  "fields": {
+    "name": "MSI GeForce RTX 3070 Ti VENTUS 3X OC 8.0 GB OC Enthusiast graphics card",
+    "description": "NVIDIA® GeForce RTX™ 3070 Ti, Overclocked\r\n8.0 GB GDDR6X (256bit), Connection via PCIe 4.0\r\nActive Cooling\r\n1x HDMI, 3x DisplayPort\r\nPower Supply: 2x 8pin, 750 W PSU recommended\r\nCard length approx. 316 mm",
+    "image": "https://img.computerunivers.net/images/250x250/90833189B2A130F9975741C7BB57FEE2.jpg",
+    "category": "GPU",
+    "quantity": 10,
+    "price": "600.00"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 6,
+  "fields": {
+    "name": "MSI GeForce RTX 3060 VENTUS 2X OC LHR 12 GB OC",
+    "description": "NVIDIA® GeForce RTX™ 3060 (LHR), Overclocked\r\n12 GB GDDR6 (192bit), Connection via PCIe 4.0\r\nActive Cooling (Dual-Slot)\r\n1x HDMI, 3x DisplayPort\r\nPower Supply: 1x 8pin, 550 W PSU recommended\r\nCard length approx. 235 mm",
+    "image": "https://img.computerunivers.net/images/250x250/908263604E575F4D4587467DBB3370DB.jpg",
+    "category": "GPU",
+    "quantity": 20,
+    "price": "350.00"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 7,
+  "fields": {
+    "name": "ASUS ROG STRIX GeForce RTX 4090 GAMING 24G 24GB ROG-STRIX-RTX4090-24G-GAMING",
+    "description": "NVIDIA® GeForce® RTX 4090\r\n24 GB GDDR6X (384bit), Connection via PCIe 4.0\r\nActive Cooling (Quad-Slot), RGB beleuchtet\r\n2x HDMI, 3x DisplayPort\r\nPower Supply: 1x 16pin (12VHPWR), 1000 W PSU recommended\r\nCard length approx. 358 mm",
+    "image": "https://img.computerunivers.net/images/250x250/909168493E8C3B2A7EE84736811C86AD.jpg",
+    "category": "GPU",
+    "quantity": 5,
+    "price": "2000.00"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 8,
+  "fields": {
+    "name": "ASUS TUF GeForce RTX 4080 Gaming OC TUF-RTX4080-O16G-GAMING 16GB",
+    "description": "NVIDIA® GeForce® RTX 4080, Overclocked\r\n16.0 GB GDDR6X (256bit), Connection via PCIe 4.0\r\nActive Cooling (Quad-Slot), RGB beleuchtet\r\n2x HDMI, 3x DisplayPort\r\nPower Supply: 1x 16pin (12VHPWR), 750 W PSU recommended\r\nCard length approx. 348 mm",
+    "image": "https://img.computerunivers.net/images/250x250/90916127B28A7B28A9744A6C85CD82DC.jpg",
+    "category": "GPU",
+    "quantity": 10,
+    "price": "1300.00"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 9,
+  "fields": {
+    "name": "AMD Ryzen 5 5600 Box",
+    "description": "High End Hexa Core CPU, Boxed with heatsink\r\nfor Sockel AM4, 65 W TDP\r\n6 Cores / 12 Threads\r\nBasistakt: 3.50 GHz, Turbo clock: 4.40 GHz\r\n35 MB L3 cache, Unlocked multiplier",
+    "image": "https://img.computerunivers.net/images/250x250/90860747AF04975DA2ED47189D478243.jpg",
+    "category": "CPU",
+    "quantity": 50,
+    "price": "130.00"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 10,
+  "fields": {
+    "name": "Intel Core i7-13700K tray 16 cores (8 P-cores + 8 E-cores)",
+    "description": "High End 16-Core CPU, tray\r\nfor Sockel 1700, 253 W TDP\r\n16 Cores / 24 Threads, Intel® UHD Graphics 770 integrated\r\nBasistakt: 3.40 GHz, Turbo clock: 5.40 GHz\r\n30 MB L3 cache, Unlocked multiplier",
+    "image": "https://img.computerunivers.net/images/250x250/90829371570AFA93430D448D83F1DF4E.jpg",
+    "category": "CPU",
+    "quantity": 30,
+    "price": "400.00"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 11,
+  "fields": {
+    "name": "Intel Core i5-13600K Boxed 14 cores (6 P-cores + 8 E-cores)",
+    "description": "High End 14-Core CPU, Boxed (without heatsink)\r\nfor Sockel 1700, 181 W TDP\r\n14 Cores / 20 Threads, Intel® UHD Graphics 770 integrated\r\nBasistakt: 3.50 GHz, Turbo clock: 5.10 GHz\r\n24 MB L3 cache, Unlocked multiplier",
+    "image": "https://img.computerunivers.net/images/250x250/909128155DD9B740F29040B1AE807BEF.jpg",
+    "category": "CPU",
+    "quantity": 20,
+    "price": "300.00"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 12,
+  "fields": {
+    "name": "Intel Core i7-13700KF Boxed 16 cores (8 P-cores + 8 E-cores)",
+    "description": "High End 16-Core CPU, Boxed (without heatsink)\r\nfor Sockel 1700, 253 W TDP\r\n16 Cores / 24 Threads\r\nBasistakt: 3.40 GHz, Turbo clock: 5.40 GHz\r\n30 MB L3 cache, Unlocked multiplier",
+    "image": "https://img.computerunivers.net/images/250x250/90912814FEB29040DF8543FC9CFB204B.jpg",
+    "category": "CPU",
+    "quantity": 10,
+    "price": "400.00"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 13,
+  "fields": {
+    "name": "AMD Ryzen 5 4500 Box",
+    "description": "Einsteiger Hexa Core CPU, Boxed with heatsink\r\nfor Sockel AM4, 65 W TDP\r\n6 Cores / 12 Threads\r\nBasistakt: 3.60 GHz, Turbo clock: 4.10 GHz\r\n11 MB L3 cache, Unlocked multiplier",
+    "image": "https://img.computerunivers.net/images/250x250/908607452305E3C201C14094BCD7C816.jpg",
+    "category": "CPU",
+    "quantity": 50,
+    "price": "70.00"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 14,
+  "fields": {
+    "name": "LG 27BQ70QC-S 68.4 cm (27\") WQHD Monitor",
+    "description": "68.4 cm (27\") 16:9, IPS-Panel (matt)\r\n2560 x 1440, Reaktionszeit 5 ms, HDR10\r\n1x USB Typ C, 1x HDMI\r\nIntegrated webcam\r\nProduct data sheet",
+    "image": "https://img.computerunivers.net/images/250x250/9091018605685837918048CCA419342A.jpg",
+    "category": "MONITOR",
+    "quantity": 20,
+    "price": "400.00"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 15,
+  "fields": {
+    "name": "LG 27UP650-W 68.6 cm (27\")",
+    "description": "68.6 cm (27\") 16:9, IPS-Panel (matt)\r\n3840 x 2160 (UHD), Reaktionszeit 5 ms, DisplayHDR 400\r\nup to 60 Hz, Adaptive Sync / FreeSync\r\n1x DisplayPort, 2x HDMI\r\nHeight adjustable, Tilt, VESA 100 x 100mm\r\nSlim Bezel, Integrated KVM-Switch\r\nProduct data sheet",
+    "image": "https://img.computerunivers.net/images/250x250/90877740C9E436B9718B498D902A6FF0.jpg",
+    "category": "MONITOR",
+    "quantity": 20,
+    "price": "250.00"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 16,
+  "fields": {
+    "name": "LG UltraGear 48GQ900-B 121 cm (48\")",
+    "description": "121 cm (48\") 16:9, OLED (matt)\r\n3840 x 2160 (UHD), Reaktionszeit 0.1 ms, HDR10\r\nup to 138 Hz, FreeSync Premium Pro, G-SYNC® kompatibel\r\n1x DisplayPort, 3x HDMI, USB-Hub (2x USB3.1 Gen 1)\r\nSpeaker, Beleuchtung, Hardware-Kalibrierung\r\nProduct data sheet",
+    "image": "https://img.computerunivers.net/images/250x250/90910460C2113032D8F148CE9B10C381.jpg",
+    "category": "MONITOR",
+    "quantity": 5,
+    "price": "900.00"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 17,
+  "fields": {
+    "name": "LG 27UP850N-W 68.4 cm (27\")",
+    "description": "68.4 cm (27\") 16:9, IPS-Panel (matt)\r\n3840 x 2160 (UHD), Reaktionszeit 5 ms, DisplayHDR 400\r\nup to 60 Hz, Nein, Adaptive Sync / FreeSync\r\n1x USB Typ C, 1x DisplayPort, 2x HDMI, USB-Hub (2x USB3.1 Gen 1)\r\nHeight adjustable, Tilt, Pivot, VESA 100 x 100mm\r\nSpeaker, Slim Bezel\r\nProduct data sheet",
+    "image": "https://img.computerunivers.net/images/250x250/90910218D750EEF8838B48FA9BE188C9.jpg",
+    "category": "MONITOR",
+    "quantity": 30,
+    "price": "300.00"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 18,
+  "fields": {
+    "name": "GIGABYTE AORUS FI32Q 80.0 cm (31.5\") WQHD Monitor",
+    "description": "80.0 cm (31.5\") 16:9, IPS-Panel (matt)\r\n2560 x 1440, Reaktionszeit 1 ms, DisplayHDR 400\r\nup to 170 Hz, FreeSync Premium, G-SYNC® kompatibel\r\n1x USB Typ C, 1x DisplayPort, 2x HDMI, USB-Hub (2x USB3.1 Gen 1)\r\nHeight adjustable, Swivel, Tilt, Pivot, VESA 100 x 100mm\r\nBeleuchtung, Bild in Bild-Modus, Slim Bezel\r\nProduct data sheet",
+    "image": "https://img.computerunivers.net/images/250x250/90829553EEAA228371784513B1D58997.jpg",
+    "category": "MONITOR",
+    "quantity": 20,
+    "price": "400.00"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 19,
+  "fields": {
+    "name": "ASUS ROG CROSSHAIR VIII DARK HERO AMD, AM4, DDR4, ATX",
+    "description": "ATX, Socket AM4\r\nAMD X570, 4x DDR4 up to 128 GB\r\n3x PCIe (x16), 1x PCIe (x1), CrossfireX, SLI\r\n8x SATA3, 2x M.2, WiFi, 2x GB-LAN\r\n1x USB 3.1 Gen2 Typ C, 5x USB 3.1 Gen2, 10x USB 3.1 Gen1, 4x USB2.0\r\nBluetooth",
+    "image": "https://img.computerunivers.net/images/250x250/9081988859D5039929BC4144BF18BEE0.jpg",
+    "category": "MOTHERBOARD",
+    "quantity": 20,
+    "price": "250.00"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 20,
+  "fields": {
+    "name": "MSI MPG Z790 EDGE WiFi",
+    "description": "ATX, Sockel 1700\r\nIntel Z790, 4x DDR5 up to 128 GB\r\n2x PCIe (x16), 1x PCIe (x1)\r\n7x SATA3, 6x M.2, WiFi, 1x 2.5GBase-T\r\n3x USB 3.1 Gen1 Typ C, 4x USB 3.1 Gen2, 5x USB 3.1 Gen1, 2x USB2.0\r\nHDMI, 1x DisplayPort 1.4, Bluetooth",
+    "image": "https://img.computerunivers.net/images/250x250/90915997E5F9E8B07AC94BC3B0E11884.jpg",
+    "category": "MOTHERBOARD",
+    "quantity": 20,
+    "price": "350.00"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 21,
+  "fields": {
+    "name": "GIGABYTE Z790 GAMING X AX",
+    "description": "ATX, Sockel 1700\r\nIntel Z790, 4x DDR5 up to 128 GB\r\n1x PCIe (x16), CrossfireX\r\n6x SATA3, 4x M.2, WiFi, 1x 2.5GBase-T\r\n2x USB 3.1 Gen2 Typ C, 2x USB 3.1 Gen2, 5x USB 3.1 Gen1, 8x USB2.0\r\nHDMI, 1x DisplayPort 1.4, Bluetooth",
+    "image": "https://img.computerunivers.net/images/250x250/90914989ECABFFCF061C472496288B53.jpg",
+    "category": "MOTHERBOARD",
+    "quantity": 20,
+    "price": "250.00"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 22,
+  "fields": {
+    "name": "GIGABYTE Z790 AORUS MASTER",
+    "description": "E-ATX, Sockel 1700\r\nIntel Z790, 4x DDR5 up to 128 GB\r\n3x PCIe (x16), CrossfireX\r\n4x SATA3, 5x M.2, WiFi, 1x 10GBase-T\r\n4x USB 3.1 Gen2 Typ C, 7x USB 3.1 Gen2, 6x USB 3.1 Gen1, 2x USB2.0\r\n1x DisplayPort 1.4, Bluetooth",
+    "image": "https://img.computerunivers.net/images/250x250/9091498607FF2DB8F7DB49E8A6E791AD.jpg",
+    "category": "MOTHERBOARD",
+    "quantity": 5,
+    "price": "500.00"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 23,
+  "fields": {
+    "name": "ASUS ROG STRIX Z790-F GAMING WIFI",
+    "description": "ATX, Sockel 1700\r\nIntel Z790, 4x DDR5 up to 128 GB\r\n3x PCIe (x16), 1x PCIe (x1)\r\n4x SATA3, 4x M.2, WiFi, 1x 2.5GBase-T\r\n3x USB 3.1 Gen1 Typ C, 2x USB 3.1 Gen2, 5x USB 3.1 Gen1, 4x USB2.0\r\nHDMI, 1x DisplayPort 1.4, Bluetooth",
+    "image": "https://img.computerunivers.net/images/250x250/9091496850B065AFBA674343B325EBA1.jpg",
+    "category": "MOTHERBOARD",
+    "quantity": 10,
+    "price": "400.00"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 24,
+  "fields": {
+    "name": "Corsair Vengeance RGB 64GB DDR4 RAM multicoloured illumination",
+    "description": "64 GB RAM, 2x 32 GB Kit\r\nDDR4, 4000 MHz (PC4-32000U)\r\nDIMM 288 Pin, CL18\r\nschwarz, multicoloured illumination\r\nIntel XMP 2.0 zertifiziert",
+    "image": "https://img.computerunivers.net/images/250x250/90909388A4B479371EA5457E8CB3AF2A.jpg",
+    "category": "OTHER",
+    "quantity": 20,
+    "price": "350.00"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 25,
+  "fields": {
+    "name": "EVGA SuperNOVA 850 P6 80+Platinum 850 Watt",
+    "description": "850 Watt, ATX, active PFC\r\n9x SATA, 4x Molex\r\n2x PCIe 8pin, 6x PCIe 6pin\r\nactivee-cooling, 1x 135 mm fan\r\n80 PLUS Platinum certificate\r\nCable Management",
+    "image": "https://img.computerunivers.net/images/250x250/908329404967BDE64DCF45C8920BCE03.jpg",
+    "category": "OTHER",
+    "quantity": 20,
+    "price": "160.00"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 26,
+  "fields": {
+    "name": "GoodRam SSD GOODRAM IRDM PRO 4TB PCIe 4X4 M.2 2280 RETAIL",
+    "description": "4 TB SSD, Connection via PCI Express 4.0 x4 (NVMe)\r\nForm factor M.2 (2280), Installation height 3.5 mm, inkl. Kühlkörper\r\nWrite speed up to 6850 MB/s, up to 7000 MB/s\r\n3D-NAND TLC Storage Cells",
+    "image": "https://img.computerunivers.net/images/250x250/9091694643A9AD38E6C340EA9F500BC1.jpg",
+    "category": "OTHER",
+    "quantity": 20,
+    "price": "400.00"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 27,
+  "fields": {
+    "name": "Cooler Master MasterBox MB311LARGB Tempered Glass/wC",
+    "description": "Mini-Tower mit Glassfenster, mehrfarbig beleuchtet\r\nsupports mATX, mini-ITX Boards\r\nInternal: 2x 2.5\", 2x 3.5\"\r\n2x 120 mm fan\r\n2x USB3.1 Gen 1\r\nCPU cooler height up to 166 mm, GPU up to ~ 344 mm",
+    "image": "https://img.computerunivers.net/images/250x250/908011559A5C185D7E334942B6D09449.jpg",
+    "category": "OTHER",
+    "quantity": 20,
+    "price": "75.00"
+  }
+},
+{
+  "model": "market.product",
+  "pk": 28,
+  "fields": {
+    "name": "ASUS Xonar U7 MKII",
+    "description": "externale 7.1 sound card, Retail\r\n24 Bit, 192 kHz, 114 dB\r\nHeadphones, Microphone, S/PDIF",
+    "image": "https://img.computerunivers.net/images/250x250/90695588B94AFBBE84CF497F8B915F6A.jpg",
+    "category": "OTHER",
+    "quantity": 20,
+    "price": "85.00"
+  }
+}
+]
