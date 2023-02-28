@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 {% load bootstrap5 %}
-
 {% block title %}
     Home
 {% endblock %}
@@ -14,7 +13,6 @@
         </form>
     </div>
 {% endblock %}
-
 {% block content %}
     {% for category in categories %}
         <h2 style="margin-top: 1.5rem">{{ category.1 }}</h2>

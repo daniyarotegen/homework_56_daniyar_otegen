@@ -39,17 +39,12 @@
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="{% url 'product_add' %}" style="color: black">Add</a>
                 </li>
+                {% block menu %}
 
-
-
-            {% block menu %}
-
-            {% endblock %}
-
+                {% endblock %}
         </div>
     </div>
 </nav>
-
 <div class="container">
     {% block content %}
 

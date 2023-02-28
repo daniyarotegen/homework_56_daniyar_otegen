@@ -8,12 +8,10 @@ def index_view(request: WSGIRequest):
     form = ProductSearchForm(request.GET)
     all_categories = [(category.value, category.label) for category in CategoryChoice]
     categories_with_products = []
-
     for category_value, category_label in all_categories:
         products_in_category = Product.objects.filter(category=category_value, quantity__gt=0)
         if products_in_category.exists():
             categories_with_products.append((category_value, category_label))
-
     if form.is_valid():
         name = form.cleaned_data.get('name')
         products = Product.objects.filter(name__icontains=name, quantity__gt=0).order_by('name')
@@ -30,11 +28,22 @@ def index_view(request: WSGIRequest):
 
 
 def category_view(request: WSGIRequest, category_code):
-    products = Product.objects.filter(category=category_code).order_by('name')
+    form = ProductSearchForm(request.GET)
+
+    if form.is_valid():
+        name = form.cleaned_data.get('name')
+        products = Product.objects.filter(category=category_code, name__icontains=name, quantity__gt=0).order_by('name')
+    else:
+        products = Product.objects.filter(category=category_code, quantity__gt=0).order_by('name')
+
     categories = [(category.value, category.label) for category in CategoryChoice]
-    return render(request, 'products_by_category.html', {
-        'products': products, 'category_code': category_code, 'categories': categories
-    })
+    context = {
+        'products': products,
+        'form': form,
+        'category_code': category_code,
+        'categories': categories,
+    }
+    return render(request, 'products_by_category.html', context=context)
 
 
 def add_view(request: WSGIRequest):

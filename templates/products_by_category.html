@@ -1,11 +1,17 @@
 {% extends 'base.html' %}
 {% load bootstrap5 %}
-
 {% block title %}
     {{ category_code }}
 {% endblock %}
 {% block menu %}
-
+    </ul>
+    <div class="container-fluid ">
+        <form class="d-flex align-items-center justify-content-end" style="padding-top: 1rem" role="search"
+              method="get" action="{% url 'products_by_category' category_code %}">
+            {{ form.as_div }}
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
 {% endblock %}
 {% block content %}
     {% for category in categories %}
@@ -13,9 +19,7 @@
             <h2 style="margin-top: 1.5rem">{{ category.1 }}</h2>
             <div class="row row-cols-1 row-cols-md-5 g-4">
                 {% for product in products %}
-
                     {% include 'partial/product_list.html' with products=products %}
-
                 {% endfor %}
             </div>
         {% endif %}
