@@ -6,12 +6,11 @@ from market.models import Product, CategoryChoice
 
 def index_view(request: WSGIRequest):
     form = ProductSearchForm(request.GET)
-    all_categories = [(category.value, category.label) for category in CategoryChoice]
-    categories_with_products = []
-    for category_value, category_label in all_categories:
+    categories = []
+    for category_value, category_label in CategoryChoice.choices:
         products_in_category = Product.objects.filter(category=category_value, quantity__gt=0)
         if products_in_category.exists():
-            categories_with_products.append((category_value, category_label))
+            categories.append((category_value, category_label))
     if form.is_valid():
         name = form.cleaned_data.get('name')
         products = Product.objects.filter(name__icontains=name, quantity__gt=0).order_by('name')
@@ -21,7 +20,7 @@ def index_view(request: WSGIRequest):
     context = {
         'products': products,
         'form': form,
-        'categories': categories_with_products
+        'categories': categories
     }
 
     return render(request, 'index.html', context=context)
@@ -36,12 +35,17 @@ def category_view(request: WSGIRequest, category_code):
     else:
         products = Product.objects.filter(category=category_code, quantity__gt=0).order_by('name')
 
-    categories = [(category.value, category.label) for category in CategoryChoice]
+    category_name = ''
+    for category_value, category_label in CategoryChoice.choices:
+        if category_value == category_code:
+            category_name = category_label
+
     context = {
         'products': products,
         'form': form,
         'category_code': category_code,
-        'categories': categories,
+        'category_name': category_name,
+        'categories': CategoryChoice.choices
     }
     return render(request, 'products_by_category.html', context=context)
 
@@ -62,8 +66,7 @@ def add_view(request: WSGIRequest):
 
 def detailed_view(request: WSGIRequest, pk):
     product = get_object_or_404(Product, pk=pk)
-    categories = [(category.value, category.label) for category in CategoryChoice]
-    return render(request, 'product_detail.html', context={'product': product, 'categories': categories})
+    return render(request, 'product_detail.html', context={'product': product, 'categories': CategoryChoice.choices})
 
 
 def update_view(request: WSGIRequest, pk):
