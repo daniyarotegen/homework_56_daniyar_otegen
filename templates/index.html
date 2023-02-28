@@ -5,7 +5,7 @@
     Home
 {% endblock %}
 {% block menu %}
-</ul>
+    </ul>
     <div class="container-fluid ">
         <form class="d-flex align-items-center justify-content-end" style="padding-top: 1rem" role="search"
               method="get" action="{% url 'index' %}">
@@ -18,6 +18,36 @@
 {% block content %}
     {% for category in categories %}
         <h2 style="margin-top: 1.5rem">{{ category.1 }}</h2>
-        {% include 'partial/product_list.html' with products=products %}
+        <div class="row row-cols-1 row-cols-md-5 g-4">
+            {% for product in products %}
+                {% if category.0 == product.category %}
+
+
+                    <div class="col">
+                        <div class="card">
+                            <a onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';"
+                               href="{% url 'product_detail' product.pk %}"
+                               style="color: inherit; text-decoration: none;">
+                                {% if product.image %}
+                                    <img class="img-thumbnail" src="{{ product.image }}"
+                                         style="height: 15rem; object-fit:contain">
+                                {% else %}
+                                    <img class="img-thumbnail"
+                                         src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930"
+                                         style="height: 15rem; object-fit:contain">
+                                {% endif %}
+                                <div class="card-body">
+                                    <h6 class="card-title">{{ product.name }}</h6>
+                                    <div class="card-footer">
+                                        <p class="text-center" style="margin: 0; ">${{ product.price }}</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+
     {% endfor %}
 {% endblock %}
